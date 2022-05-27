@@ -1,7 +1,7 @@
 package selenfire.selenfire;
 
 /**
- * Hello world!
+ * Hello world
  *
  */
 public class App {
