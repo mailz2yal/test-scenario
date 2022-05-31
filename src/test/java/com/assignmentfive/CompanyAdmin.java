@@ -16,9 +16,7 @@ import org.testng.annotations.Test;
 public class CompanyAdmin {
 	String optionsel = "1715,Bluegrass Trail Chaska, Minnesota, USA";
 	WebDriver driver;
-	// private static final Logger logger =
-	// LogManager.getLogger(CompanyAdmin.class);
-
+	
 	@BeforeTest
 	public void openBrowser() {
 
@@ -27,10 +25,10 @@ public class CompanyAdmin {
 		driver.navigate().to("https://www.vitshr.com/");
 		WebElement register = driver.findElement(By.linkText("Register"));
 		register.click();
-		WebElement details = driver.findElement(By.id("details-button"));
-		details.click();
-		WebElement proceed = driver.findElement(By.linkText("Proceed to web.vitshr.com (unsafe)"));
-		proceed.click();
+		//WebElement details = driver.findElement(By.id("details-button"));
+		//details.click();
+		//WebElement proceed = driver.findElement(By.linkText("Proceed to web.vitshr.com (unsafe)"));
+		//proceed.click();
 	}
 
 	public void registerCompany() throws InterruptedException {
@@ -72,7 +70,7 @@ public class CompanyAdmin {
 		WebElement email = driver.findElement(By.xpath("//input[@name='email']"));
 		email.sendKeys("mailz2yal@gmail.com");
 		WebElement logid = driver.findElement(By.xpath("//input[@name='loginId']"));
-		logid.sendKeys("67583&");
+		logid.sendKeys("YALMOZHI123");
 		WebElement pass = driver.findElement(By.xpath("//input[@name='password']"));
 		pass.sendKeys("abcdef*23456");
 		WebElement sighnup = driver
